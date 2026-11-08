@@ -31,6 +31,10 @@ instance/
 # Jupyter Notebook
 .ipynb_checkpoints
 
+# OSMnx / OSM API download cache
+cache/
+examples/cache/
+
 # Environments
 .env
 .venv/

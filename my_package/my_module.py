@@ -2,6 +2,7 @@
 This module provides an example class and a function for basic arithmetic operations.
 """
 
+
 class MyClass:
     """
     A class that represents a simple example with an integer argument.
@@ -19,6 +20,7 @@ class MyClass:
 
     def __init__(self, my_arg: int):
         self.my_arg = my_arg
+
 
 def my_function(a: int, b: int) -> int:
     """

@@ -10,22 +10,25 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-import os
 import datetime
+import os
 import sys
+from importlib.metadata import PackageNotFoundError, version
 
 sys.path.insert(0, os.path.abspath("../.."))
-from sphinx.builders.html import StandaloneHTMLBuilder
 
 
 # -- Project information -----------------------------------------------------
 
-project = "MyPackage"
+project = "my_package"
 copyright = "2024-{}".format(datetime.datetime.now().year)
-author = "My name"
+author = "Vasilii Starikov"
 
 # The full version, including alpha/beta/rc tags
-release = "0.0.1" # needs to be changed from time to time
+try:
+    release = version("my_package")
+except PackageNotFoundError:
+    release = "0.0.0"
 # -- General configuration ---------------------------------------------------
 
 # Add any Sphinx extension module names here, as strings. They can be

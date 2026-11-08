@@ -1,4 +1,4 @@
-Welcome to MyPackage documentation!
+Welcome to my_package documentation!
 ====================================
 
 .. include:: ../../README.rst

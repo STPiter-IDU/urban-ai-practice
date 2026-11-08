@@ -29,7 +29,7 @@ Use the library by importing classes from ``my_package``:
 
 ::
 
-   from my_package.my_module_1 import MyClass
+   from my_package.my_module import MyClass
 
 For more detailed use case see our `examples <#examples>`__.
 
@@ -45,7 +45,7 @@ Examples
 Next examples will help one to get used to the library:
 
 1. Main `example <./examples/my_example.ipynb>`__ of the library.
-2. ...
+2. `Yalutorovsk study <./examples/yalutorovsk_study.ipynb>`__ — full BlocksNet workflow: OSM data, blocks, accessibility, schools, density and morphotypes.
 
 Documentation
 -------------

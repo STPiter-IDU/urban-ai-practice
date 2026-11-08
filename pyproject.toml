@@ -11,7 +11,7 @@ authors = [
 description = "IDU research package boilerplate"
 readme = "README.rst"
 requires-python = ">=3.10"
-license = { file = "LICENCE" }
+license = { file = "LICENSE" }
 
 dependencies = [ # здесь необходимо вести все устанавливаемые зависимости: пакеты, которые необходимы для адекватной работы вашей библиотеки
     "geopandas>=1.0.0,<2.0.0",
@@ -33,7 +33,7 @@ local_scheme = "no-local-version"
 
 [project.optional-dependencies]
 dev = [ # зависимости, необходимые для разработки библиотеки, но не для её использования
-    "black[jupyter]==22.3",     # Форматирование, включая поддержку Jupyter
+    "black[jupyter]==26.10.1",  # Форматирование, включая поддержку Jupyter
     "mapclassify==2.6.1",       # Визуализация данных в Jupyter
     "folium==0.14.0",           # Карты для Jupyter
     "matplotlib-inline==0.1.6", # Встроенные графики в Jupyter
@@ -41,7 +41,7 @@ dev = [ # зависимости, необходимые для разработ
     "jupyter",                  # Jupyter Notebook
     "ipywidgets",               # Виджеты для интерактивных элементов
     "isort==5.10.1",            # Сортировка импортов
-    "pylint==2.17.5",           # Линтинг
+    "pylint==4.1.3",            # Линтинг
     "pre-commit>=3.1",          # Интеграция хуков для автоформатирования
     "build",                    # Сборка пакета для публикации
     "twine",                    # Публикация пакета на PyPI
@@ -50,6 +50,11 @@ dev = [ # зависимости, необходимые для разработ
 tests = [ # зависимости, необходимые для тестирования библиотеки
     "pytest>=7.0.0,<8.0.0",
     "pytest-cov>=4.0.0,<5.0.0",
+]
+
+study = [ # зависимости для учебного исследования BlocksNet (нужен Python 3.10-3.12)
+    "blocksnet[torch]==1.0.0a9", # torch нужен для импорта blocksnet.blocks.cutting
+    "matplotlib>=3.9.0,<4.0.0",  # карты и графики в ноутбуке
 ]
 
 docs = [ # зависимости, необходимые для сборки документации
